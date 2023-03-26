@@ -1,14 +1,10 @@
 import React from "react";
-import { Navigate } from "react-router-dom";
-import Login from "../Login";
-
 import classNames from "classnames/bind";
-import styles from "./Staff.scss";
+import styles from "./AboutMe.scss";
 import "../scss/GlobalStyles.scss";
-import { useIsLoggedInStaff } from "../../redux/appSlice";
 import Kkpose from "../../assets/kkpose.png"
 
-const Staff = () => {
+const AboutMe = () => {
   const cx = classNames.bind(styles);
   
 
@@ -43,4 +39,4 @@ const Staff = () => {
   );
 };
 
-export default Staff;
+export default AboutMe;
