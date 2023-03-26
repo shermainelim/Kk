@@ -8,62 +8,32 @@ import adminLogo from "../assets/admin.png";
 import CustomButton from "../shared/CustomButton";
 import "../screens/scss/GlobalStyles.scss";
 import Cover from "../assets/cover.png";
+import Kk from "../assets/kk2.png"
 
 const Welcome = () => {
   const navigate = useNavigate();
   const cx = classNames.bind(styles);
 
-  const renderResident = () => {
+  const renderTekkie = () => {
     return (
-      <div data-testid="welcome-category-resident" className={cx("category")}>
-        <img
-          data-testid="img-logo-resident"
-          className={cx("logo")}
-          src={residentLogo}
-          alt="Logo"
-        />
-        <CustomButton
-          className="resident-btn"
-          testId="resident"
-          content="Customers / Residents"
-          clicked={() => {
-            navigate("/resident");
-          }}
-
-          // resident={true}
-        ></CustomButton>
+      <div className={cx("category")}>
+       Civil Engineer By Day, Tekkie By Night
       </div>
     );
   };
 
-  const renderStaff = () => {
+  const renderDesc = () => {
     return (
-      <div className={cx("category")}>
-        <img className={cx("logo")} src={staffLogo} alt="Logo" />
-        <CustomButton
-          className="staff-btn"
-          content="Chocolate Staffs"
-          clicked={() => {
-            navigate("/staff");
-          }}
-
-          // staff={true}
-        ></CustomButton>
+      <div className={cx("category-desc")}>
+        CivilTEKK aims to share information about Civil Engineering, <br/>Programming personal projects to help the other aspiring engineers<br/>improve on their productivity and automate more work. <br/>I also share on various tools that make my life easier.
       </div>
     );
   };
 
-  const renderAdmin = () => {
+  const renderAvatar = () => {
     return (
       <div className={cx("category")}>
-        <img className={cx("logo")} src={adminLogo} alt="Logo" />
-        <CustomButton
-          className="admin-btn"
-          content="Administrators"
-          clicked={() => {
-            navigate("/adminLogin");
-          }}
-        ></CustomButton>
+        <img style={{ width: "220px", height: "220px" }} src={Kk} alt="Logo" />
       </div>
     );
   };
@@ -77,9 +47,9 @@ const Welcome = () => {
             alt="Company Logo"
           ></img>
     
-      {renderResident()}
-      {renderStaff()}
-      {renderAdmin()}
+      {renderTekkie()}
+      {renderDesc()}
+      {renderAvatar()}
     </div>
   );
 };

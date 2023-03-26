@@ -18,6 +18,7 @@ import Profile from "../assets/profile.png";
 
 const AppNavigator = () => {
   return (
+    <div style={{height:"100%"}}>
     <Router>
       <nav
         style={{
@@ -95,6 +96,7 @@ const AppNavigator = () => {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
+    </div>
   );
 };
 
