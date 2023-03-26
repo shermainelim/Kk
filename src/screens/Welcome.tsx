@@ -2,13 +2,10 @@ import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import classNames from "classnames/bind";
 import styles from "./scss/Welcome.scss";
-import residentLogo from "../assets/resident.png";
-import staffLogo from "../assets/staff.png";
-import adminLogo from "../assets/admin.png";
-import CustomButton from "../shared/CustomButton";
 import "../screens/scss/GlobalStyles.scss";
 import Cover from "../assets/cover.png";
 import Kk from "../assets/kk2.png"
+import { TypeAnimation } from 'react-type-animation';
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -17,7 +14,21 @@ const Welcome = () => {
   const renderTekkie = () => {
     return (
       <div className={cx("category")}>
-       Civil Engineer By Day, Tekkie By Night
+         <TypeAnimation
+      sequence={[
+        "Civil Engineer By Day",
+        2000,
+        "Software Engineer By Night",
+        2000
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      speed={20}
+      
+      style={{ fontSize: '1.5em', display: 'inline-block' }}
+    />
+      
       </div>
     );
   };
