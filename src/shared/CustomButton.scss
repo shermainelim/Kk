@@ -7,9 +7,10 @@
   color: #fff;
   margin: 1rem;
   outline: none;
-  border-radius: 20px;
-  min-width: 250px;
+  border-radius: 12px;
+  min-width: 360px;
   height: 50px;
+  font-weight: 600;
 }
 
 .btn {
@@ -54,4 +55,9 @@
 
 .chocolate-bar {
   background-color: $chocolate-bar;
+}
+
+.civil-blog-btn{
+  background-color: rgb(66, 235, 204);
+  color: #0F044C;
 }
