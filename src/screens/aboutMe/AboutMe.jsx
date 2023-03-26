@@ -32,8 +32,9 @@ const AboutMe = () => {
         Research Data Collection System (RDCS) for NUS Medicine. <br/>
         Having delivered multiple end-to-end solutions throughout<br/>
         the GDipSA program, internship and my prior work history, <br/>
-        I am looking to bridge technology and on the ground implementation <br/>
-        teams and client stakeholders to save cost and improve productvitiy. <br/>
+        I am looking to bridge technology and <br/>
+        on the ground implementation teams and stakeholders<br/>
+        to save cost and improve productvitiy. <br/>
       </div>
     </div>
   );

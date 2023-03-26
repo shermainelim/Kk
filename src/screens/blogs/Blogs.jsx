@@ -21,10 +21,12 @@ const Blogs = () => {
       <div className={cx("blogs")}>CivilTEKK</div>
 
       <div className={cx("blogs-desc")}>
-        CivilTekk was created to share my ideas and projects that I feel <br />
-        will benefit the average engineer. Be it in Civil Engineering, CAD{" "}
+        CivilTekk was created to share my ideas and projects<br/>
+        that I feel will benefit the average engineer. 
+        <br/>Be it in Civil Engineering, CAD, Automation,
         <br />
-        , Automation or Software Engineering, anything goes inside CivilTekk.{" "}
+        or Software Engineering, anything goes <br/>
+        inside CivilTekk.
         <br />
         Heck, you can even share what kind of ideas, <br />
         if I think is feasible, I will try it out and let you know.
@@ -57,8 +59,8 @@ const Blogs = () => {
       </div>
 
       <div className={cx("blogs-desc")}>
-      Yu-Gi-Oh! has always been a hobby, hence I created this site <br/>
-      to sell my second hand products on the web. <br/>
+      Yu-Gi-Oh! has always been a hobby, hence I created <br/>
+      this site to sell my second hand products on the web. <br/>
       </div>
       <CustomButton
             className="civil-blog-btn"

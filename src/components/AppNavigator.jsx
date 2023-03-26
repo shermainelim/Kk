@@ -43,7 +43,7 @@ const AppNavigator = () => {
           }}
         >
           
-          About Me
+          About
         </Link>
 
         <Link
@@ -67,7 +67,7 @@ const AppNavigator = () => {
           }}
         >
           
-          Promo Codes
+          Promos
         </Link>
       </nav>
 
