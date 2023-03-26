@@ -1,16 +1,13 @@
-@use "sass:math";
 
-html {
+
+body, html {
   height: 100%;
+  background-color: rgb(16, 21, 53);
 }
 
-body {
-  height: 100%;
-  margin:-10px;
-}
 
 div#root {
-  height: 100%; /* remove this line to see div.app is no more 100% height */
+  //height: 100%; /* remove this line to see div.app is no more 100% height */
   background-color: rgb(16, 21, 53);
   min-width:auto;
   
