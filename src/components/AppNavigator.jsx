@@ -14,7 +14,7 @@ import Register from "../screens/Register";
 import ResidentPage from "../screens/resident/ResidentPage";
 import StaffPage from "../screens/staff/StaffPage";
 import StaffVoucherAck from "../screens/staff/StaffVoucherAck";
-import ChocolateBar from "../assets/chocolatebar.png";
+import Profile from "../assets/profile.png";
 
 const AppNavigator = () => {
   return (
@@ -23,13 +23,30 @@ const AppNavigator = () => {
         style={{
           textAlign: "center",
           flexDirection: "row",
-          padding: "center"
+          padding: "20px",
+          backgroundColor:"#101535",
+          display: "flex",
+          justifyContent:"center"
         }}
       >
-        <Link
+         <Link
           to="/"
           style={{
             color: "purple",
+            textDecoration: "none",
+          }}
+        >
+          <img
+            style={{ marginRight: "10px", width: "80px", height: "80px", margin:"-10px", paddingRight:"10px" }}
+            src={Profile}
+            alt="Company Logo"
+          ></img>
+         
+        </Link>
+        <Link
+          to="/"
+          style={{
+            color: "rgb(41, 215, 183)",
             textDecoration: "none",
             padding: "20px"
           }}
@@ -41,7 +58,7 @@ const AppNavigator = () => {
         <Link
           to="/"
           style={{
-            color: "purple",
+            color: "rgb(41, 215, 183)",
             textDecoration: "none",
             padding: "20px"
           }}
@@ -53,7 +70,7 @@ const AppNavigator = () => {
         <Link
           to="/"
           style={{
-            color: "purple",
+            color: "rgb(41, 215, 183)",
             textDecoration: "none",
             padding: "20px"
           }}
