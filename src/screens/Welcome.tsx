@@ -7,6 +7,7 @@ import staffLogo from "../assets/staff.png";
 import adminLogo from "../assets/admin.png";
 import CustomButton from "../shared/CustomButton";
 import "../screens/scss/GlobalStyles.scss";
+import Cover from "../assets/cover.png";
 
 const Welcome = () => {
   const navigate = useNavigate();
@@ -69,9 +70,13 @@ const Welcome = () => {
 
   return (
     <div data-testid="welcome-container" className={cx("container")}>
-      <div className={cx("text")} data-testid="text">
-        {"Collect a ticket and redeem a bar of chocolate today."}
-      </div>
+     
+      <img
+            style={{ width: "220px", height: "120px" }}
+            src={Cover}
+            alt="Company Logo"
+          ></img>
+    
       {renderResident()}
       {renderStaff()}
       {renderAdmin()}
