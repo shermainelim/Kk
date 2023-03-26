@@ -45,7 +45,7 @@ const AppNavigator = () => {
          
         </Link>
         <Link
-          to="/"
+          to="/staff"
           style={{
             color: "rgb(41, 215, 183)",
             textDecoration: "none",

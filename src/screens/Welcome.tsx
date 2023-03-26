@@ -36,7 +36,13 @@ const Welcome = () => {
   const renderDesc = () => {
     return (
       <div className={cx("category-desc")}>
-        CivilTEKK aims to share information about Civil Engineering, <br/>Programming personal projects to help the other aspiring engineers<br/>improve on their productivity and automate more work. <br/>I also share on various tools that make my life easier.
+        CivilTEKK aims to share information <br/>
+        on Civil Engineering and Programming <br/>
+        with personal projects to help<br/>
+        aspiring engineers improve on their<br/>
+        productivity and automate work. <br/>
+        I also share on various tools that<br/>
+        I use to make my life easier.
       </div>
     );
   };

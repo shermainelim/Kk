@@ -1,3 +1,5 @@
+@use "sass:math";
+
 html {
   height: 100%;
 }
@@ -10,6 +12,7 @@ body {
 div#root {
   height: 100%; /* remove this line to see div.app is no more 100% height */
   background-color: rgb(16, 21, 53);
+  min-width:auto;
   
 
 }
@@ -37,7 +40,7 @@ div.app {
   //justify-content: center;
   align-items: center;
   color: rgb(184, 206, 249);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .category-desc {
@@ -47,7 +50,8 @@ div.app {
   //justify-content: center;
   align-items: center;
   color: rgb(41, 215, 183);
-  font-size: 20px;
+  font-size: 16px;
+  text-align:left;
 }
 
 
